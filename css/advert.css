@@ -5,7 +5,7 @@
     color: #b7b7b7;
 }
 
-.adverts {}
+/* .adverts {} */
 
 .category {
     width: auto;
@@ -24,7 +24,7 @@
     width: 215px;
 }
 
-.card-preview {}
+/* .card-preview {} */
 
 .category {
     font-size: 13px;
@@ -83,7 +83,7 @@
     padding: 3px 0px 0px 0px;
 }
 
-.category ul {}
+/* .category ul {} */
 
 .card-title {
     max-width: 100%;
@@ -125,7 +125,7 @@
     border: 1px solid #dddddd;
 }
 
-.card-info {}
+/* .card-info {} */
 
 .card-mini-title,
 .card-mini-cost {
@@ -153,4 +153,4 @@
     padding: 0px 0px 5px 5px;
 }
 
-.card-mini-cost {}
+/* .card-mini-cost {} */
