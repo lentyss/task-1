@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>Регистрация</title>
+    <title>Вход</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link href="css/form.css" rel="stylesheet">
@@ -44,15 +44,17 @@
                 <main class="content">
                     <div class = "left-vert-line">
                     <div class = "right-vert-line">
-                    <h2 class="title-form">Регистрация</h2>
-                    <form method = "GET" action="/reg">
-                    <input class="form-input" value="" maxlength="24" name="login" placeholder="Введите ваш логин"/>
-                    
+                    <h2 class="title-form">Вход на сайт</h2>
+                    <form method = "GET" action="/login">
+                    <input class="form-input" value="" maxlength="24" name="login" placeholder="Ваш логин"/>
                     <input class="form-input" type = "password" value="" maxlength="24" name="password" placeholder="Ваш пароль"/>
-                    
-                    <input class="form-input" type = "password" value="" maxlength="24" name="repassword" placeholder="Повторите пароль"/>
-                    
-                    <button type = "submit" class="form-send">Зарегистрироваться</button>
+                    <div class = "form-sending">
+                        <input class = "form-remember" type="checkbox" checked><label>Запомнить меня</label>
+                        <button type = "submit" class="form-send-entering">Войти</button>
+                    </div>
+                    <div class="restore-pass">
+                        <a href="/forgot_password">Восстановить пароль</a>
+                    </div>
                     </form>
                     </div>
                     </div>

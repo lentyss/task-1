@@ -192,6 +192,40 @@ body {
     margin: 30px 140px 25px 30px;
 }
 
+.form-sending {
+    float: right;
+	padding: 6px;
+	margin-right: 119px;
+}
+
+.form-send-entering {
+    width: 100px;
+    width: 90px;
+    padding: 5px;
+    font-size: 15px;
+    margin: 30px 0px 20px 15px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.form-remember {
+	margin: 3px;
+}
+
+.form-send-entering:hover {
+    background-color: #a5a5a5;
+    border: 2px solid #4854a2;
+}
+
+.restore-pass a {
+    font-size: 15px;
+    float: left;
+	padding: 39px;
+	margin-left: 40px;
+    color: #009cf0;
+    font-weight: 500;
+}
+
 .container {
     width: 100%;
     float: left;
