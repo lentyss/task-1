@@ -150,7 +150,7 @@ body {
 .title-form {
     font-size: 21px;
     line-height: 28px;
-    padding: 80px 0px 30px 80px;
+    padding: 30px 0px 30px 80px;
     color: #3b3b3b;
 } 
 
@@ -168,11 +168,21 @@ body {
     width: 100px;
     width: 160px;
     padding: 6px;
-    font-size: 15px;
-    margin: 30px 0px 20px 437px;
+    font-size: 13px;
+    margin: 0px 0px 0px 439px;
     background-color: #ffffff;
     border: 2px solid #000000;
 }
+
+.form-newo-send {
+    width: 100px;
+    width: 160px;
+    padding: 6px;
+    font-size: 13px;
+    margin: 0px 0px 0px 442px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+} 
 
 .form-send:hover {
     background-color: #eeeeee;
@@ -181,14 +191,14 @@ body {
 .left-vert-line{
     border-left: 2px solid #616060;
     content: "";
-    height: 450px;
+    height: 500px;
     margin: 30px 4px 25px 30px;;
 }
 
 .right-vert-line{
     border-right: 2px solid #616060;
     content: "";
-    height: 450px;
+    height: 500px;
     margin: 30px 140px 25px 30px;
 }
 
@@ -224,6 +234,69 @@ body {
 	margin-left: 40px;
     color: #009cf0;
     font-weight: 500;
+}
+
+.headline {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 7px;
+    margin: 0px 0px 1px 80px;
+    width: 500px;
+    border: 2px solid #000000;
+}
+
+::-webkit-input-placeholder { color: #474747; font-size: 15px;}
+
+.category-search {
+    float: left;
+	padding: 6px;
+	margin-left: 55px;
+}
+
+.category-form-select {
+    width: 100px;
+    width: 270px;
+    padding: 8px;
+    font-size: 15px;
+    margin: 10px 0px 10px 69px;
+    background-color: #adadad;
+    text-align: center;
+}
+
+.category-form {
+	margin: 20px 20px 20px 20px;
+    float: left;
+    font-size: 15px;
+}
+
+.file-adding {
+    float: left;
+	padding: 6px;
+	margin-left: 55px;
+}
+
+.file-form-select {
+    width: 100px;
+    width: 250px;
+    padding: 8px;
+    font-size: 15px;
+    margin: 6px 0px 0px 108px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.file-form {
+	margin: 20px 20px 20px 20px;
+    float: left;
+    font-size: 15px;
+}
+
+.text-field {
+    margin: 0px 20px 30px 80px;
+    border: 2px solid #000000;
+    resize: none;
 }
 
 .container {

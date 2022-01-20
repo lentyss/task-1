@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>Регистрация</title>
+    <title>Добавление объявления</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link href="css/form.css" rel="stylesheet">
@@ -44,15 +44,24 @@
                 <main class="content">
                     <div class = "left-vert-line">
                     <div class = "right-vert-line">
-                    <h2 class="title-form">Регистрация</h2>
-                    <form method = "GET" action="/reg">
-                    <input class="form-input" value="" maxlength="24" name="login" placeholder="Введите ваш логин"/>
-                    
-                    <input class="form-input" type = "password" value="" maxlength="24" name="password" placeholder="Ваш пароль"/>
-                    
-                    <input class="form-input" type = "password" value="" maxlength="24" name="repassword" placeholder="Повторите пароль"/>
-                    
-                    <button type = "submit" class="form-send">Зарегистрироваться</button>
+                    <h2 class="title-form">Добавить объявление</h2>
+                    <form method = "POST" action="/add">
+                        <input class="headline" value="" maxlength="64" name="title" placeholder="Заголовок вашего объявления" />
+                        <div class="category-search">
+                            <h3 class="category-form">Выберите категорию</h3>
+                            <select class="category-form-select" name="category">
+                                <option value="0">Все категории</option>
+                                <option value="4" selected>Недвижимость</option>
+                                <option value="7">Авто</option>
+                                <option value="9">Работа</option>
+                            </select>
+                        </div>
+                        <div class="file-adding">
+                            <h3 class="file-form">Выберите файл</h3>
+                            <input enctype="multipart/form-data" class = "file-form-select" type="file" name="image">
+                        </div>
+                        <textarea class = "text-field" name = "body" placeholder = "Текст объявления" rows="10" cols="68" ></textarea>
+                        <button type = "submit" class="form-newo-send">Добавить объявление</button>
                     </form>
                     </div>
                     </div>
@@ -169,7 +178,7 @@
             </ul>
             <ul>
                 <li><a href="#">Основные категории</a></li>
-                <li><a href="adv_create.html">Добавить объявление</a></li>
+                <li><a href="#">Добавить объявление</a></li>
                 <li><a href="#">Правила публикации</a></li>
             </ul>
             <ul>
