@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title>Добавление объявления</title>
+    <title>Доска объявлений</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link href="css/form.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/search.css" rel="stylesheet">
     <link href="css/advert.css" rel="stylesheet">
 </head>
@@ -42,32 +42,68 @@
 
             <div class="container">
                 <main class="content">
-                    <div class = "left-vert-line">
-                    <div class = "right-vert-line">
-                    <h2 class="title-form">Добавить объявление</h2>
-                    <form method = "POST" action="/add">
-                        <input class="headline" value="" maxlength="64" name="title" placeholder="Заголовок вашего объявления" />
-                        <div class="category-search">
-                            <h3 class="category-form">Выберите категорию</h3>
-                            <select class="category-form-select" name="category">
-                                <option value="0">Все категории</option>
-                                <option value="4" selected>Недвижимость</option>
-                                <option value="7">Авто</option>
-                                <option value="9">Работа</option>
-                            </select>
-                        </div>
-                        <div class="file-adding">
-                            <h3 class="file-form">Выберите файл</h3>
-                            <input enctype="multipart/form-data" class = "file-form-select" type="file" name="image">
-                        </div>
-                        <textarea class = "text-field" name = "body" placeholder = "Текст объявления" rows="10" cols="68" ></textarea>
-                        <button type = "submit" class="form-newo-send">Добавить объявление</button>
-                    </form>
-                    </div>
-                    </div>
+
+                    <h2 class="my-adverts">Мои объявления</h2>
                     <div class="adverts">
 
-    
+                    </div>
+                    <div class="card-list">
+                        <div class="obv" id="1">
+                            <div class="obv-preview">
+                                <h3 class="advert-id">№102525252</h3>
+                                <img src="./images/default.jpg" class = "advert-img"/>
+                            </div>
+                            <div class="obv-info">
+                                <h3 class="advert-zag">Заголовок объявления</h3>
+                                <h3 class="advert-cost">1 000 000 ₽</h3>
+                                <h3 class="advert-adress">Москва, проспект Ленина, 21</h3>                            
+                            </div>
+                            <div class="obv-buttons">
+                                <form action="page/new.html">
+                                    <button class="button_edit">Редактировать</button>
+                                </form>
+                                <button type = "submit" class="button_delete">Удалить</button>
+
+                            </div>
+                        </div>
+
+                        <div class="obv" id="1">
+                            <div class="obv-preview">
+                                <h3 class="advert-id">№102525252</h3>
+                                <img src="./images/default.jpg" class = "advert-img"/>
+                            </div>
+                            <div class="obv-info">
+                                <h3 class="advert-zag">Заголовок объявления</h3>
+                                <h3 class="advert-cost">1 000 000 ₽</h3>
+                                <h3 class="advert-adress">Москва, проспект Ленина, 21</h3>
+                            </div>
+                            <div class="obv-buttons">
+                                <form action="page/new.html">
+                                    <button class="button_edit">Редактировать</button>
+                                </form>
+                                <button type = "submit" class="button_delete">Удалить</button>
+
+                            </div>
+                        </div>
+
+                        <div class="obv" id="1">
+                            <div class="obv-preview">
+                                <h3 class="advert-id">№102525252</h3>
+                                <img src="./images/default.jpg" class = "advert-img"/>
+                            </div>
+                            <div class="obv-info">
+                                <h3 class="advert-zag">Заголовок объявления</h3>
+                                <h3 class="advert-cost">1 000 000 ₽</h3>
+                                <h3 class="advert-adress">Москва, проспект Ленина, 21</h3>
+                            </div>
+                            <div class="obv-buttons">
+                                <form action="page/new.html">
+                                    <button class="button_edit">Редактировать</button>
+                                </form>
+                                <button type = "submit" class="button_delete">Удалить</button>
+
+                            </div>
+                        </div>
                     </div>
 
                 </main>
@@ -123,11 +159,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
                 <div class="advert-title">Просмотренные объявления</div>
 
                 <div class="advert-sidebar">
@@ -178,7 +209,7 @@
             </ul>
             <ul>
                 <li><a href="#">Основные категории</a></li>
-                <li><a href="#">Добавить объявление</a></li>
+                <li><a href="#adv_create.html">Добавить объявление</a></li>
                 <li><a href="#">Правила публикации</a></li>
             </ul>
             <ul>

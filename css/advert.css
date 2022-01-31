@@ -5,6 +5,13 @@
     color: #b7b7b7;
 }
 
+.my-adverts {
+    font-size: 21px;
+    line-height: 28px;
+    padding: 30px 0px 30px 80px;
+    color: #3b3b3b;
+}
+
 /* .adverts {} */
 
 .category {
@@ -18,6 +25,30 @@
     font-size: 14px!important;
     display: inline-grid;
     margin: 5px 0px 5px 0px;
+}
+
+.obv {
+    background: #f7f7f7;
+    border-bottom: 2px solid #111111;
+    display: flex;
+    margin: 10px 0px 10px 30px;
+    padding: 5px 0px 5px 0px;
+}
+
+.obv-preview {
+    padding: 0px 0px 5px 0px;
+}
+
+.obv-preview img {
+    vertical-align: top;
+    width: 140px;
+    border: 2px solid #111111;
+    margin: 10px 0px 10px 40px;
+    padding: 5px 0px 5px 0px;
+}
+
+.advert-img {
+    width: 215px;
 }
 
 .card img {
@@ -92,6 +123,48 @@
     color: rgb(0, 156, 240);
 }
 
+.advert-id {
+    margin: 4px 0px 3px 61px;
+    font-size: 17px;
+}
+
+.advert-zag {
+    font-size: 17px;
+    margin: 45px 4px 20px 40px;
+    vertical-align: top;
+}
+
+.advert-cost {
+    color: #2ec241;
+    margin: 0px 20px 20px 40px;
+    vertical-align: top;
+    font-size: 17px;
+} 
+
+.button_delete {
+    margin: 0px 0px 20px 300px;
+    float: right;
+    width: 140px;
+    padding: 6px;
+    font-size: 13px;
+    background-color: #d69b1b;
+    border: 2px solid #000000;
+}
+
+.button_delete:hover {
+    background-color: #e01c1c;
+}
+
+.button_edit {
+    margin: 47px 0px 20px 0px;
+    float: right;
+    width: 140px;
+    padding: 6px;
+    font-size: 13px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
 .card-cost {
     color: rgb(0, 0, 0);
     line-height: 18px!important;
@@ -105,6 +178,11 @@
     line-height: 20px;
 }
 
+.advert-adress {
+    font-size: 12px;
+    margin: 0px 20px 10px 40px;
+    vertical-align: top;
+}
 
 /* карточки в сайдбаре */
 
