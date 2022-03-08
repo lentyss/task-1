@@ -1,42 +1,47 @@
 class Advert {
     constructor(obj) {
         this.adData = obj.adData;
-        this.indexElem = obj.i;
-        this.elem = document.getElementsByClassName('button_delete');
-        
+        this.elem = obj.elem;
+        this.getTemplate = this.getTemplate.bind(this);
+        this.deleteEvent = this.deleteEvent.bind(this);
     }
     /*
     * Заполнение шаблона объявления в my-adverts
     */
-    getTemplate(i) {
-        //for (let i = 0; i < document.getElementsByClassName('obv').length; i++)
-        document.getElementsByClassName('advert-cost')[this.indexElem].innerHTML = this.adData.cost;
-        document.getElementsByClassName('advert-id')[this.indexElem].innerHTML = this.adData.id;
-        document.getElementsByClassName('advert-zag')[this.indexElem].innerHTML = this.adData.title;
-        document.getElementsByClassName('advert-adress')[this.indexElem].innerHTML = this.adData.address;
+    getTemplate() {
+        this.tmp = `<div class="obv" id="${this.adData.id}">
+                        <div class="obv-preview">
+                        <h3 class="advert-id">№ ${this.adData.id}</h3>
+                        <img src="./images/default.jpg" class = "advert-img"/>
+                        </div>
+                        <div class="obv-info">
+                        <h3 class="advert-zag">${this.adData.title}</h3>
+                        <h3 class="advert-cost">${this.adData.cost} ₽</h3>
+                        <h3 class="advert-adress">${this.adData.address}</h3>
+                        </div>
+                        <div class="obv-buttons">
+                        <a href="adv_create.html" class="button_edit">Редактировать</a>
+                        <button type = "submit" class="button_delete">Удалить</button>
+                        </div>
+                    </div>`
+        this.elem.insertAdjacentHTML('beforebegin', this.tmp);
+        this.setEvent();
     }
     /*
     * Навешивание события на удаление объявления my-adverts
     */
     setEvent() {
-        if (this.elem) {
-            for (let i = 0; i < this.elem.length; i++){
-               /* this.elem[i].addEventListener("click", () => {
-                    this.indexElem = i;
-                    globalThis.deleteEvent();
-                });*/
-                this.elem[i].addEventListener("click", this.deleteEvent);
-                this.indexElem = i;
-            }
-        }        
-        else {
-            console.log('Нет элемента в шаблоне');
+        let buttonDelete = document.getElementsByClassName('button_delete');
+        for (let i = 0; i < buttonDelete.length; i++) {
+            buttonDelete[i].addEventListener("click", this.deleteEvent);
         }
     }
     /*
-    * Удаление объявления my-adverts и события на кнопку
+    * Удаление объявления my-adverts
     */
-    deleteEvent() {
-        document.getElementsByClassName('obv')[this.indexElem].remove();
+    deleteEvent(element, target) {
+        let advert = element.target.closest('.obv');
+        advert.getAttribute('id');
+        advert.remove();
     }
 }

@@ -6,18 +6,17 @@ class AdvertList {
     /*
     * Добавление объявления на страницу и добавление созданного класса
     */
-    initAdvert(adData, i) {
-        let data = {adData, i};
+    initAdvert(adData, elem) {
+        let data = { adData, elem };
         let advert = new Advert(data);
         advert.getTemplate();
-        advert.setEvent();
     }
     /*
     * Перебор списка объявлений
     */
     listAdverts() {
         for (let i = 0; i < this.adData.length; i++){
-            this.initAdvert(this.adData[i], i);
+            this.initAdvert(this.adData[i], this.elem);
         }
     }
 }
