@@ -1,0 +1,237 @@
+.advert-title {
+    font-size: 17px;
+    line-height: 28px;
+    padding: 20px 0px 8px 0px;
+    color: #b7b7b7;
+}
+
+.my-adverts {
+    font-size: 21px;
+    line-height: 28px;
+    padding: 30px 0px 30px 80px;
+    color: #3b3b3b;
+}
+
+/* .adverts {} */
+
+.category {
+    width: auto;
+}
+
+.card {
+    background: #f7f7f7;
+    padding: 6px 8px 20px 8px;
+    width: 213px;
+    font-size: 14px!important;
+    display: inline-grid;
+    margin: 5px 0px 5px 0px;
+}
+
+.obv {
+    background: #f7f7f7;
+    border-bottom: 2px solid #111111;
+    display: flex;
+    margin: 10px 0px 10px 30px;
+    padding: 5px 0px 5px 0px;
+}
+
+.obv-preview {
+    padding: 0px 0px 5px 0px;
+}
+
+.obv-preview img {
+    vertical-align: top;
+    width: 140px;
+    border: 2px solid #111111;
+    margin: 10px 0px 10px 40px;
+    padding: 5px 0px 5px 0px;
+}
+
+.advert-img {
+    width: 215px;
+}
+
+.card img {
+    width: 215px;
+}
+
+/* .card-preview {} */
+
+.category {
+    font-size: 13px;
+}
+
+.category li a {
+    text-decoration: none;
+    display: block;
+    color: #009cf0;
+    padding: 2px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.category li a:hover {
+    color: blue;
+}
+
+.category {
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.category:after {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.category>div {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+}
+
+.category li a span {
+    text-decoration: none;
+    padding: 2px 0px 0px 10px;
+    color: gray;
+    font-size: 14px;
+}
+
+.category li {
+    display: block;
+    padding: 3px 0px 0px 0px;
+}
+
+/* .category ul {} */
+
+.card-title {
+    max-width: 100%;
+    font-weight: 700;
+    outline-color: #009cf0;
+    color: rgb(0, 156, 240);
+}
+
+.advert-id {
+    margin: 4px 0px 3px 61px;
+    font-size: 17px;
+}
+
+.advert-zag {
+    font-size: 17px;
+    margin: 45px 4px 20px 40px;
+    vertical-align: top;
+}
+
+.advert-cost {
+    color: #2ec241;
+    margin: 0px 20px 20px 40px;
+    vertical-align: top;
+    font-size: 17px;
+} 
+
+.button_delete {
+    margin: 0px 40px 20px 300px;
+    float: right;
+    width: 140px;
+    padding: 6px;
+    font-size: 13px;
+    background-color: #d69b1b;
+    border: 2px solid #000000;
+}
+
+.button_delete:hover {
+    background-color: #e01c1c;
+}
+
+.button_edit {
+    margin: 47px 40px 20px 0px;
+    float: right;
+    width: 124px;
+    padding: 6px;
+    font-size: 13px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    text-decoration: none;
+    color: #111111;
+    text-align:center;
+}
+
+.card-cost {
+    color: rgb(0, 0, 0);
+    line-height: 18px!important;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    font-weight: 700;
+}
+
+.card-address {
+    color: #999;
+    line-height: 20px;
+}
+
+.advert-adress {
+    font-size: 12px;
+    margin: 0px -21px 10px 40px;
+    vertical-align: top;
+}
+
+/* карточки в сайдбаре */
+
+.card-mini {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 5px 0px 5px 0px;
+}
+
+.card-mini-preview {
+    padding: 0px 0px 5px 0px;
+}
+
+.card-mini-preview img {
+    vertical-align: top;
+    width: 100px;
+    border: 1px solid #dddddd;
+}
+
+/* .card-info {} */
+
+.card-mini-title,
+.card-mini-cost {
+    padding: 0px 0px 10px 5px;
+    display: block;
+}
+
+.card-mini-cost-free {
+    font-weight: 700;
+    color: rgb(22 93 5);
+    font-size: 14px;
+    background: #fffb8f;
+    width: auto;
+    display: inline-flex;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 10px;
+}
+
+.card-mini-title {
+    vertical-align: top;
+    max-width: 100%;
+    font-weight: 700;
+    outline-color: #009cf0;
+    color: rgb(0, 156, 240);
+    padding: 0px 0px 5px 5px;
+}
+
+/* .card-mini-cost {} */
